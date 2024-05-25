@@ -73,7 +73,7 @@ if (!enteredEmailIsValid || !enteredPasswordIsValid || enteredUserNameIsInvalid)
   return;
 }
 
-axios.post('http://localhost:3001/register', {enteredUserName, enteredEmail, enteredPassword})
+axios.post('http://localhost:3002/register', {enteredUserName, enteredEmail, enteredPassword})
   .then(result => {console.log(result)
 navigate('/login')
 
