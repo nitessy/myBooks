@@ -25,7 +25,7 @@ const emailHandler = (event) => {
 
 const submitHandler = (event) =>{
     event.preventDefault()
-    axios.post('http://localhost:3002/login', {enteredEmail, enteredPassword})
+    axios.post('https://my-books-delta.vercel.app/login', {enteredEmail, enteredPassword})
     .then(result => {console.log(result)
         if(result.data === "Success"){
             navigate('/home')
